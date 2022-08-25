@@ -1,0 +1,181 @@
+/* 
+
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pink: hsl(322, 100%, 66%)
+- Light Pink: hsl(321, 100%, 78%)
+- Light Red: hsl(0, 100%, 63%)
+
+### Neutral
+
+- Very Dark Cyan: hsl(192, 100%, 9%)
+- Very Pale Blue: hsl(207, 100%, 98%)
+
+## Typography
+
+### Headings
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 700
+
+### Body
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400, 600, 700
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/)
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.main-heading {
+  font-family: "Poppins", sans-serif;
+}
+
+
+/*********************************************** Header CSS Starts ***********************************************/
+
+/* Header */
+header {
+  width: 100%;
+  padding: 8% 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Huddle logo div */
+.huddle-logo {
+  padding-top: 2.5px;
+}
+
+/* Huddle logo image */
+.huddle-logo img {
+  width: 100px;
+}
+
+/* Try it Button in the header at right side */
+.try-it-btn {
+  background-color: #ffffff;
+  border: 1px solid hsl(321, 100%, 78%);
+  color: hsl(321, 100%, 78%);
+  border-radius: 20px;
+  padding: 3px 15px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*********************************************** Header CSS Finish ***********************************************/
+
+
+/*********************************************** Community fans sectoin CSS start ***********************************************/
+
+.community-fans {
+  
+}
+
+.screen-mockup img {
+  width: 100%;
+}
+
+/*********************************************** Community fans sectoin CSS Finish ***********************************************/
+
+
+
+
+
+/* 
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 375px) {
+
+/*********************************************** Header CSS Starts ***********************************************/
+
+  /* Header logo Image size-up on medium sized mobile devices */
+  .huddle-logo img {
+    width: 130px;
+  }
+
+  /* Increasing the try it button padding in medium size mobile devices */
+  .try-it-btn {
+    padding: 6px 20px;
+  }
+
+/*********************************************** Header CSS Finish ***********************************************/
+
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+/*********************************************** Header CSS Starts ***********************************************/
+
+/* header */
+header {
+  padding: 5%;
+}
+/*********************************************** Header CSS Finish ***********************************************/
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /*********************************************** Header CSS Starts ***********************************************/
+
+/* header */
+header {
+  padding: 3.2% 3%;
+}
+/*********************************************** Header CSS Finish ***********************************************/
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
+
