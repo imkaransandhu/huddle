@@ -48,6 +48,11 @@ For the social icons, you can use a font icon library. Some suggestions can be f
   box-sizing: border-box;
 }
 
+html {
+  font-size: 14px;
+  /* background-color: black; */
+}
+
 html,
 body,
 h1,
@@ -70,13 +75,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-
 /*********************************************** Header CSS Starts ***********************************************/
 
 /* Header */
 header {
   width: 100%;
-  padding: 8% 7%;
+  padding: 2.01rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,7 +93,7 @@ header {
 
 /* Huddle logo image */
 .huddle-logo img {
-  width: 100px;
+  width: 5.5rem;
 }
 
 /* Try it Button in the header at right side */
@@ -97,18 +101,44 @@ header {
   background-color: #ffffff;
   border: 1px solid hsl(321, 100%, 78%);
   color: hsl(321, 100%, 78%);
-  border-radius: 20px;
-  padding: 3px 15px;
+  border-radius: 1.5rem;
+  padding: 0.2rem 1rem;
   font-family: "Open Sans", sans-serif;
+  font-size: 0.6rem;
 }
 
 /*********************************************** Header CSS Finish ***********************************************/
 
-
 /*********************************************** Community fans sectoin CSS start ***********************************************/
 
 .community-fans {
-  
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.main-heading {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.main-text {
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  color: hsl(192, 100%, 9%);
+  font-weight: 600;
+}
+
+.get-start-btn {
+  background-color: hsl(322, 100%, 66%);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  text-transform: capitalize;
+  margin-top: 3rem;
+  margin-bottom: 4.5rem;
 }
 
 .screen-mockup img {
@@ -117,65 +147,332 @@ header {
 
 /*********************************************** Community fans sectoin CSS Finish ***********************************************/
 
+/*********************************************** Digital Data sectoin CSS Start ***********************************************/
 
+.digital-data {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 4rem;
+}
 
+.message-data {
+  margin-top: 4rem;
+}
 
+.digital-data img {
+  width: 2rem;
+  float: left;
+}
 
-/* 
-// X-Small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap */
+.digital-data h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5rem;
+}
+
+.digital-data p {
+  color: hsl(214, 3%, 53%);
+  text-transform: capitalize;
+}
+
+/*********************************************** Digital Data sectoin CSS Start ***********************************************/
+
+/*********************************************** Banner section CSS Start ***********************************************/
+.banner {
+  text-align: center;
+}
+
+.banner .main-heading,
+.banner .main-text {
+  padding: 0 2rem;
+}
+
+.banner .main-heading {
+  margin-top: 3rem;
+}
+
+.banner .main-text {
+  margin-top: 1rem;
+}
+
+.banner .illustration-img img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 80%;
+}
+
+.top-curve {
+  position: absolute;
+  top: -6.8rem;
+  width: 100%;
+}
+
+.bottom-curve {
+  position: absolute;
+  bottom: -3.5rem;
+  width: 100%;
+}
+
+.top-curve img {
+  width: 100%;
+  height: 100px;
+}
+
+.bottom-curve img {
+  width: 100%;
+  height: 50px;
+}
+
+.grow-together {
+  background-color: hsl(207, 100%, 98%);
+  /* background-color: red; */
+  position: relative;
+  padding: 3rem 0;
+}
+
+.flowing-conversations {
+  padding-top: 12rem;
+  position: relative;
+}
+
+.your-users {
+  position: relative;
+  background-color: hsl(207, 100%, 98%);
+  /* background-color: red; */
+  padding: 3rem 0;
+  margin: 15rem 0;
+}
+
+/*********************************************** Banner section CSS Finish ***********************************************/
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 375px) {
-
-/*********************************************** Header CSS Starts ***********************************************/
-
-  /* Header logo Image size-up on medium sized mobile devices */
-  .huddle-logo img {
-    width: 130px;
+  /* Changing the root element font */
+  html {
+    font-size: 15px;
   }
 
-  /* Increasing the try it button padding in medium size mobile devices */
-  .try-it-btn {
-    padding: 6px 20px;
+  /* Setting the width for text in community fan section */
+  .main-text {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
-
-/*********************************************** Header CSS Finish ***********************************************/
-
 }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  /* Changing the root element font */
+  html {
+    font-size: 15px;
+  }
 
-/*********************************************** Header CSS Starts ***********************************************/
+  /* Changing the padding for community fan section for big screen */
+  .community-fans {
+    padding: 2.5rem 4rem;
+  }
 
-/* header */
-header {
-  padding: 5%;
-}
-/*********************************************** Header CSS Finish ***********************************************/
+  /* Setting the width for text in community fan section */
+  .main-text {
+    width: 70%;
+  }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  /* Changing the root element font */
+  html {
+    font-size: 16px;
+  }
+
+  /* Setting the width for text in community fan section */
+  .main-text {
+    width: 50%;
+  }
+
+  /* Changing the flex direction to rows */
+  .digital-data {
+    flex-direction: row;
+  }
+
+  .message-data {
+    margin-top: 0;
+  }
+
+  /* Banner Section */
+  .flowing-conversations,
+  .grow-together,
+  .your-users {
+    display: flex;
+  }
+
+  .flowing-conversations {
+    flex-direction: row-reverse;
+  }
+
+  .grow-together .illustration-img,
+  .your-users .illustration-img,
+  .flowing-conversations .information {
+    padding-left: 4rem;
+  }
+
+  .grow-together .information,
+  .your-users .information,
+  .flowing-conversations .illustration-img {
+    padding-right: 4rem;
+  }
+
+  .banner .main-heading {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .banner .main-text {
+    width: 100%;
+    text-align: left;
+  }
+
+  .top-curve img,
+  .bottom-curve img {
+    display: none;
+  }
+
+  .grow-together .top-curve,
+  .grow-together .bottom-curve,
+  .your-users .top-curve,
+  .your-users .bottom-curve {
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .grow-together .top-curve {
+    background-image: url(./images/bg-section-top-desktop-1.svg);
+    top: -12rem;
+  }
+
+  .grow-together .bottom-curve {
+    background-image: url(./images/bg-section-bottom-desktop-1.svg);
+    bottom: -11.5rem;
+  }
+
+  .your-users .top-curve {
+    background-image: url(./images/bg-section-top-desktop-2.svg);
+    top: -12rem;
+  }
+
+  .your-users .bottom-curve {
+    background-image: url(./images/bg-section-bottom-desktop-2.svg);
+    bottom: -11.5rem;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  /* Changing the root element font */
+  html {
+    font-size: 18px;
+  }
+
+  /* Setting the padding for screen mockup image */
+  .screen-mockup {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .grow-together .top-curve {
+    background-image: url(./images/bg-section-top-desktop-1.svg);
+    top: -10.5rem;
+  }
+
+  .grow-together .bottom-curve {
+    background-image: url(./images/bg-section-bottom-desktop-1.svg);
+    bottom: -10rem;
+  }
+
+  .your-users .top-curve {
+    background-image: url(./images/bg-section-top-desktop-2.svg);
+    top: -10.5rem;
+  }
+
+  .your-users .bottom-curve {
+    background-image: url(./images/bg-section-bottom-desktop-2.svg);
+    bottom: -10.2rem;
+  }
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  /*********************************************** Header CSS Starts ***********************************************/
+  /* Changing the root element font */
+  html {
+    font-size: 20px;
+  }
 
-/* header */
-header {
-  padding: 3.2% 3%;
+  .grow-together .top-curve {
+    background-image: url(./images/bg-section-top-desktop-1.svg);
+    top: -9rem;
+  }
+
+  .grow-together .bottom-curve {
+    background-image: url(./images/bg-section-bottom-desktop-1.svg);
+    bottom: -8.5rem;
+  }
+
+  .your-users .top-curve {
+    background-image: url(./images/bg-section-top-desktop-2.svg);
+    top: -9rem;
+  }
+
+  .your-users .bottom-curve {
+    background-image: url(./images/bg-section-bottom-desktop-2.svg);
+    bottom: -8.5rem;
+  }
+
 }
-/*********************************************** Header CSS Finish ***********************************************/
+
+@media (min-width: 1400px) {
+  /* Changing the root element font */
+  html {
+    font-size: 25px;
+  }
 }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-}
+@media (min-width: 1800px) {
+  html {
+    /* Changing the root element font */
+    font-size: 45px;
+  }
 
+
+  .grow-together .top-curve {
+    background-image: url(./images/bg-section-top-desktop-1.svg);
+    top: -5rem;
+  }
+
+  .grow-together .bottom-curve {
+    background-image: url(./images/bg-section-bottom-desktop-1.svg);
+    bottom: -4.5rem;
+  }
+
+  .your-users .top-curve {
+    background-image: url(./images/bg-section-top-desktop-2.svg);
+    top: -5rem;
+  }
+
+  .your-users .bottom-curve {
+    background-image: url(./images/bg-section-bottom-desktop-2.svg);
+    bottom: -5rem;
+  }
+}
