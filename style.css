@@ -50,7 +50,6 @@ For the social icons, you can use a font icon library. Some suggestions can be f
 
 html {
   font-size: 14px;
-  /* background-color: black; */
 }
 
 html,
@@ -171,6 +170,7 @@ header {
 .digital-data h2 {
   font-family: "Poppins", sans-serif;
   font-size: 3.5rem;
+  text-align: left;
 }
 
 .digital-data p {
@@ -204,31 +204,28 @@ header {
   width: 80%;
 }
 
-.top-curve {
+.top-curve,
+.bottom-curve {
   position: absolute;
-  top: -6.8rem;
   width: 100%;
+}
+
+.top-curve {
+  top: -100px;
 }
 
 .bottom-curve {
-  position: absolute;
-  bottom: -3.5rem;
-  width: 100%;
+  bottom: -100px;
 }
 
-.top-curve img {
-  width: 100%;
-  height: 100px;
-}
-
+.top-curve img,
 .bottom-curve img {
   width: 100%;
-  height: 50px;
+  height: 105px;
 }
 
 .grow-together {
   background-color: hsl(207, 100%, 98%);
-  /* background-color: red; */
   position: relative;
   padding: 3rem 0;
 }
@@ -241,9 +238,12 @@ header {
 .your-users {
   position: relative;
   background-color: hsl(207, 100%, 98%);
-  /* background-color: red; */
   padding: 3rem 0;
   margin: 15rem 0;
+}
+
+.desk {
+  display: none;
 }
 
 /*********************************************** Banner section CSS Finish ***********************************************/
@@ -279,6 +279,16 @@ header {
   .main-text {
     width: 70%;
   }
+
+  /* Changing the flex direction to rows */
+  .digital-data {
+    flex-direction: row;
+  }
+
+  /* Removing the margin to align both divs in digital data */
+  .message-data {
+    margin-top: 0;
+  }
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -293,22 +303,20 @@ header {
     width: 50%;
   }
 
-  /* Changing the flex direction to rows */
-  .digital-data {
-    flex-direction: row;
-  }
-
-  .message-data {
-    margin-top: 0;
-  }
-
   /* Banner Section */
+  /* Changing the divs in banner to flex */
   .flowing-conversations,
   .grow-together,
   .your-users {
     display: flex;
   }
 
+  /* Setting the 50% width to illuster image and text on right ot left */
+  .information , .illustration-img {
+    flex: 50%;
+  }
+
+  /* Changing banner middle section to float text on left */
   .flowing-conversations {
     flex-direction: row-reverse;
   }
@@ -341,40 +349,14 @@ header {
     text-align: left;
   }
 
-  .top-curve img,
-  .bottom-curve img {
+  /* Hiding the mobile svg image (curves) of banner in desktop size */
+  .mob {
     display: none;
   }
 
-  .grow-together .top-curve,
-  .grow-together .bottom-curve,
-  .your-users .top-curve,
-  .your-users .bottom-curve {
-    height: 300px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  }
-
-  .grow-together .top-curve {
-    background-image: url(./images/bg-section-top-desktop-1.svg);
-    top: -12rem;
-  }
-
-  .grow-together .bottom-curve {
-    background-image: url(./images/bg-section-bottom-desktop-1.svg);
-    bottom: -11.5rem;
-  }
-
-  .your-users .top-curve {
-    background-image: url(./images/bg-section-top-desktop-2.svg);
-    top: -12rem;
-  }
-
-  .your-users .bottom-curve {
-    background-image: url(./images/bg-section-bottom-desktop-2.svg);
-    bottom: -11.5rem;
+  /* Displaying the desktop svg (curves) image on desktop  */
+  .desk {
+    display: block;
   }
 }
 
@@ -391,24 +373,9 @@ header {
     padding-right: 5rem;
   }
 
-  .grow-together .top-curve {
-    background-image: url(./images/bg-section-top-desktop-1.svg);
-    top: -10.5rem;
-  }
-
-  .grow-together .bottom-curve {
-    background-image: url(./images/bg-section-bottom-desktop-1.svg);
-    bottom: -10rem;
-  }
-
-  .your-users .top-curve {
-    background-image: url(./images/bg-section-top-desktop-2.svg);
-    top: -10.5rem;
-  }
-
-  .your-users .bottom-curve {
-    background-image: url(./images/bg-section-bottom-desktop-2.svg);
-    bottom: -10.2rem;
+  .banner .main-text {
+    width: 80%;
+    margin-left: 0;
   }
 }
 
@@ -416,27 +383,7 @@ header {
 @media (min-width: 1200px) {
   /* Changing the root element font */
   html {
-    font-size: 20px;
-  }
-
-  .grow-together .top-curve {
-    background-image: url(./images/bg-section-top-desktop-1.svg);
-    top: -9rem;
-  }
-
-  .grow-together .bottom-curve {
-    background-image: url(./images/bg-section-bottom-desktop-1.svg);
-    bottom: -8.5rem;
-  }
-
-  .your-users .top-curve {
-    background-image: url(./images/bg-section-top-desktop-2.svg);
-    top: -9rem;
-  }
-
-  .your-users .bottom-curve {
-    background-image: url(./images/bg-section-bottom-desktop-2.svg);
-    bottom: -8.5rem;
+    font-size: 18.5px;
   }
 
 }
@@ -444,7 +391,7 @@ header {
 @media (min-width: 1400px) {
   /* Changing the root element font */
   html {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
@@ -452,27 +399,6 @@ header {
 @media (min-width: 1800px) {
   html {
     /* Changing the root element font */
-    font-size: 45px;
-  }
-
-
-  .grow-together .top-curve {
-    background-image: url(./images/bg-section-top-desktop-1.svg);
-    top: -5rem;
-  }
-
-  .grow-together .bottom-curve {
-    background-image: url(./images/bg-section-bottom-desktop-1.svg);
-    bottom: -4.5rem;
-  }
-
-  .your-users .top-curve {
-    background-image: url(./images/bg-section-top-desktop-2.svg);
-    top: -5rem;
-  }
-
-  .your-users .bottom-curve {
-    background-image: url(./images/bg-section-bottom-desktop-2.svg);
-    bottom: -5rem;
+    font-size: 40px;
   }
 }
