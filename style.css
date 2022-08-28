@@ -125,6 +125,7 @@ header {
   margin-top: 2rem;
   color: hsl(192, 100%, 9%);
   font-weight: 600;
+  line-height: 1.5rem;
 }
 
 .get-start-btn {
@@ -178,16 +179,14 @@ header {
   text-transform: capitalize;
 }
 
-/*********************************************** Digital Data sectoin CSS Start ***********************************************/
+/*********************************************** Digital Data sectoin CSS Finih ***********************************************/
 
 /*********************************************** Banner section CSS Start ***********************************************/
-.banner {
-  text-align: center;
-}
 
 .banner .main-heading,
 .banner .main-text {
   padding: 0 2rem;
+  text-align: center;
 }
 
 .banner .main-heading {
@@ -198,9 +197,11 @@ header {
   margin-top: 1rem;
 }
 
+.banner .illustration-img {
+  text-align: center;
+}
+
 .banner .illustration-img img {
-  background-size: contain;
-  background-repeat: no-repeat;
   width: 80%;
 }
 
@@ -218,10 +219,13 @@ header {
   bottom: -100px;
 }
 
-.top-curve img,
-.bottom-curve img {
+.bottom-curve .desk,
+.top-curve .desk,
+.bottom-curve .mob,
+.top-curve .mob {
   width: 100%;
   height: 105px;
+  display: block;
 }
 
 .grow-together {
@@ -242,11 +246,153 @@ header {
   margin: 15rem 0;
 }
 
-.desk {
+.bottom-curve .desk,
+.top-curve .desk {
   display: none;
 }
 
 /*********************************************** Banner section CSS Finish ***********************************************/
+
+/*********************************************** Build Community section CSS Start ***********************************************/
+
+.build-community {
+  text-align: center;
+  padding: 0 2rem;
+}
+
+/*********************************************** Build Community section CSS Finish ***********************************************/
+
+/*********************************************** Footer CSS Start ***********************************************/
+
+footer {
+  background-color: hsl(192, 100%, 9%);
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem 2rem;
+  position: relative;
+  margin-top: 10rem;
+}
+
+.footer-svg {
+  position: absolute;
+  width: 100%;
+  top: -50px;
+  text-align: center;
+  left: 0;
+}
+
+.footer-svg .desk,
+.footer-svg .mob {
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+
+.footer-svg .desk {
+  display: none;
+}
+
+.huddle-newsletter {
+  text-align: left;
+}
+
+.huddle-newsletter .main-heading,
+.huddle-newsletter .main-text {
+  color: #ffffff;
+  width: 100%;
+}
+
+.huddle-newsletter .main-heading {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.huddle-newsletter .main-text {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.newsletter-form {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#newsletter-field,
+.subscribe-btn {
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+}
+
+#newsletter-field {
+  width: 100%;
+}
+
+.subscribe-btn {
+  width: 50%;
+  align-self: flex-end;
+  background-color: hsl(322, 100%, 66%);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 1rem 3rem;
+  margin-top: 0.5rem;
+}
+
+.huddle-contact {
+  text-align: left;
+  margin-top: 5rem;
+}
+
+.huddle-contact .huddle-logo img {
+  color: #ffffff;
+  width: 70%;
+}
+
+.huddle-contact .main-text {
+  color: #ffffff;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.huddle-contact .huddle-phone,
+.huddle-contact .huddle-email {
+  display: flex;
+  align-items: center;
+}
+
+.huddle-phone .main-text,
+.huddle-email .main-text {
+  margin-top: 0;
+} 
+
+
+.huddle-contact .huddle-phone {
+  margin-top: 2rem;
+}
+
+.huddle-contact .huddle-email {
+  margin-top: 1.3rem;
+}
+
+.huddle-phone img,
+.huddle-email img {
+  width: 1.5rem;
+  height: 1.25rem;
+  margin-right: 1rem;
+}
+
+.social-icons {
+  text-align: left;
+  margin-top: 2rem;
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*********************************************** Footer CSS Finish ***********************************************/
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 375px) {
@@ -289,6 +435,8 @@ header {
   .message-data {
     margin-top: 0;
   }
+
+
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -312,7 +460,8 @@ header {
   }
 
   /* Setting the 50% width to illuster image and text on right ot left */
-  .information , .illustration-img {
+  .information,
+  .illustration-img {
     flex: 50%;
   }
 
@@ -350,14 +499,21 @@ header {
   }
 
   /* Hiding the mobile svg image (curves) of banner in desktop size */
-  .mob {
+  .top-curve .mob,
+  .bottom-curve .mob , .footer-svg .mob {
     display: none;
   }
 
   /* Displaying the desktop svg (curves) image on desktop  */
-  .desk {
+  .top-curve .desk,
+  .bottom-curve .desk , .footer-svg .desk {
     display: block;
   }
+
+
+
+
+
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -377,6 +533,35 @@ header {
     width: 80%;
     margin-left: 0;
   }
+
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .huddle-contact , .huddle-newsletter {
+    width: 35%;
+  }
+
+  .huddle-contact {
+    margin-top: 0;
+  }
+
+  .newsletter-form {
+    flex-direction: row;
+  }
+
+  .subscribe-btn {
+    margin-top: 0;
+    margin-left: 20px;
+    width: 30%;
+    padding: 1rem .5rem;
+    text-align: center;
+  }
+
+
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
@@ -385,7 +570,6 @@ header {
   html {
     font-size: 18.5px;
   }
-
 }
 
 @media (min-width: 1400px) {
