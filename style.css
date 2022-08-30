@@ -75,6 +75,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
 /*********************************************** Header CSS Starts ***********************************************/
 
 /* Header */
@@ -213,10 +218,10 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   height: 500px;
-  width: 100%;
+  width: calc(100% + 20px);
   position: absolute;
-  left: 0;
-  right: 0;
+  left: -10px;
+  right: -10px;
 }
 
 .grow-together .top-curve {
@@ -302,10 +307,7 @@ header {
 
 /*********************************************** Footer CSS Start ***********************************************/
 
-.container {
-  width: 100%;
-  overflow: hidden;
-}
+
 
 footer {
   /* background-color: hsl(192, 100%, 9%); */
@@ -327,7 +329,6 @@ footer {
   background-size: contain;
   background-repeat: no-repeat;
   height: 500px;
-
 }
 
 /* .footer-svg .desk,
