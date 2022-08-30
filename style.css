@@ -302,6 +302,11 @@ header {
 
 /*********************************************** Footer CSS Start ***********************************************/
 
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
 footer {
   /* background-color: hsl(192, 100%, 9%); */
   background-color: hsl(193, 43%, 32%);
@@ -313,14 +318,16 @@ footer {
 }
 
 .footer-svg {
-  width: 100vw;
+  width: calc(100% + 20px);
   position: absolute;
-  right: 0;
+  left: -10px;
+  right: -10px;
   top: calc((-14 / 100) * 100vw);
   background-image: url(./images/bg-footer-top-mobile.svg);
   background-size: contain;
   background-repeat: no-repeat;
   height: 500px;
+
 }
 
 /* .footer-svg .desk,
