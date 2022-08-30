@@ -206,52 +206,37 @@ header {
   width: 80%;
 }
 
-.grow-together .top-curve {
+.grow-together .top-curve,
+.grow-together .bottom-curve,
+.your-users .top-curve,
+.your-users .top-curve {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
   width: 100%;
   position: absolute;
   left: 0;
   right: 0;
-  top: calc((-29.9 / 100) * 100vw);
+}
+
+.grow-together .top-curve {
+  top: calc((-29 / 100) * 100vw);
   background-image: url(./images/bg-section-top-mobile-1.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 500px;
 }
 
 .grow-together .bottom-curve {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
   bottom: -500px;
   background-image: url(./images/bg-section-bottom-mobile-1.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 500px;
 }
 
 .your-users .top-curve {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
   top: calc((-26.5 / 100) * 100vw);
   background-image: url(./images/bg-section-top-mobile-2.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 500px;
 }
 
 .your-users .bottom-curve {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
   bottom: -500px;
   background-image: url(./images/bg-section-bottom-mobile-2.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 500px;
 }
 
 /* .top-curve,
@@ -332,13 +317,12 @@ footer {
   position: absolute;
   left: 0;
   right: 0;
-  top: calc((-10.9 / 100) * 100vw);
+  top: calc((-14 / 100) * 100vw);
   background-image: url(./images/bg-footer-top-mobile.svg);
   background-size: contain;
   background-repeat: no-repeat;
   height: 500px;
 }
-
 
 /* .footer-svg .desk,
 .footer-svg .mob {
@@ -573,7 +557,6 @@ footer {
 
   .grow-together .bottom-curve {
     /* bottom: calc((-14.1/100) * 100vw); */
-    bottom: -500px;
     background-image: url(./images/bg-section-bottom-desktop-1.svg);
   }
 
@@ -584,7 +567,6 @@ footer {
 
   .your-users .bottom-curve {
     /* bottom: calc((-14.1/100) * 100vw); */
-    bottom: -500px;
     background-image: url(./images/bg-section-bottom-desktop-2.svg);
   }
 
