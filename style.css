@@ -68,6 +68,7 @@ a {
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: chartreuse;
 }
 
 .main-heading {
@@ -205,31 +206,82 @@ header {
   width: 80%;
 }
 
-.top-curve,
+.grow-together .top-curve {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc((-10.9 / 100) * 100vw);
+  background-image: url(./images/bg-section-top-mobile-1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.grow-together .bottom-curve {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -500px;
+  background-image: url(./images/bg-section-bottom-mobile-1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.your-users .top-curve {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc((-10.9 / 100) * 100vw);
+  background-image: url(./images/bg-section-top-mobile-2.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.your-users .bottom-curve {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -500px;
+  background-image: url(./images/bg-section-bottom-mobile-2.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+/* .top-curve,
 .bottom-curve {
   position: absolute;
   width: 100%;
 }
 
 .top-curve {
-  top: -100px;
+  top: -95px;
+  left: 0;
 }
 
 .bottom-curve {
-  bottom: -100px;
-}
+  bottom: -95px;
+  left: 0;
+} */
 
-.bottom-curve .desk,
+/* .bottom-curve .desk,
 .top-curve .desk,
 .bottom-curve .mob,
 .top-curve .mob {
   width: 100%;
   height: 105px;
-  display: block;
-}
+  display: inline;
+} */
 
 .grow-together {
-  background-color: hsl(207, 100%, 98%);
+  /* background-color: hsl(207, 100%, 98%); */
+  background-color: brown;
   position: relative;
   padding: 3rem 0;
 }
@@ -241,15 +293,16 @@ header {
 
 .your-users {
   position: relative;
-  background-color: hsl(207, 100%, 98%);
+  /* background-color: hsl(207, 100%, 98%); */
+  background-color: brown;
   padding: 3rem 0;
   margin: 15rem 0;
 }
 
-.bottom-curve .desk,
+/* .bottom-curve .desk,
 .top-curve .desk {
   display: none;
-}
+} */
 
 /*********************************************** Banner section CSS Finish ***********************************************/
 
@@ -265,7 +318,8 @@ header {
 /*********************************************** Footer CSS Start ***********************************************/
 
 footer {
-  background-color: hsl(192, 100%, 9%);
+  /* background-color: hsl(192, 100%, 9%); */
+  background-color: hsl(193, 43%, 32%);
   color: #ffffff;
   text-align: center;
   padding: 3rem 2rem;
@@ -274,23 +328,28 @@ footer {
 }
 
 .footer-svg {
-  position: absolute;
   width: 100%;
-  top: -50px;
-  text-align: center;
+  position: absolute;
   left: 0;
+  right: 0;
+  top: calc((-10.9 / 100) * 100vw);
+  background-image: url(./images/bg-footer-top-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
 }
 
-.footer-svg .desk,
+
+/* .footer-svg .desk,
 .footer-svg .mob {
-  display: block;
+  display: inline;
   width: 100%;
-  height: 50px;
+  height: 100px;
 }
 
 .footer-svg .desk {
   display: none;
-}
+} */
 
 .huddle-newsletter {
   text-align: left;
@@ -366,8 +425,7 @@ footer {
 .huddle-phone .main-text,
 .huddle-email .main-text {
   margin-top: 0;
-} 
-
+}
 
 .huddle-contact .huddle-phone {
   margin-top: 2rem;
@@ -435,8 +493,6 @@ footer {
   .message-data {
     margin-top: 0;
   }
-
-
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -498,22 +554,44 @@ footer {
     text-align: left;
   }
 
-  /* Hiding the mobile svg image (curves) of banner in desktop size */
+  /* Hiding the mobile svg image (curves) of banner in desktop size
   .top-curve .mob,
   .bottom-curve .mob , .footer-svg .mob {
     display: none;
   }
 
-  /* Displaying the desktop svg (curves) image on desktop  */
+  /* Displaying the desktop svg (curves) image on desktop  
   .top-curve .desk,
   .bottom-curve .desk , .footer-svg .desk {
-    display: block;
+    display: inline;
+  } */
+
+  .grow-together .top-curve {
+    top: calc((-10.9 / 100) * 100vw);
+    background-image: url(./images/bg-section-top-desktop-1.svg);
   }
 
+  .grow-together .bottom-curve {
+    /* bottom: calc((-14.1/100) * 100vw); */
+    bottom: -500px;
+    background-image: url(./images/bg-section-bottom-desktop-1.svg);
+  }
 
+  .your-users .top-curve {
+    top: calc((-10 / 100) * 100vw);
+    background-image: url(./images/bg-section-top-desktop-2.svg);
+  }
 
+  .your-users .bottom-curve {
+    /* bottom: calc((-14.1/100) * 100vw); */
+    bottom: -500px;
+    background-image: url(./images/bg-section-bottom-desktop-2.svg);
+  }
 
-
+  .footer-svg {
+    top: calc((-14 / 100) * 100vw);
+    background-image: url(./images/bg-footer-top-mobile.svg);
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -534,14 +612,14 @@ footer {
     margin-left: 0;
   }
 
-
   footer {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
   }
 
-  .huddle-contact , .huddle-newsletter {
+  .huddle-contact,
+  .huddle-newsletter {
     width: 35%;
   }
 
@@ -557,11 +635,9 @@ footer {
     margin-top: 0;
     margin-left: 20px;
     width: 30%;
-    padding: 1rem .5rem;
+    padding: 1rem 0.5rem;
     text-align: center;
   }
-
-
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
