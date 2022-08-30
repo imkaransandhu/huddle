@@ -209,7 +209,7 @@ header {
 .grow-together .top-curve,
 .grow-together .bottom-curve,
 .your-users .top-curve,
-.your-users .top-curve {
+.your-users .bottom-curve {
   background-size: contain;
   background-repeat: no-repeat;
   height: 500px;
@@ -313,9 +313,8 @@ footer {
 }
 
 .footer-svg {
-  width: 100%;
+  width: 100vw;
   position: absolute;
-  left: 0;
   right: 0;
   top: calc((-14 / 100) * 100vw);
   background-image: url(./images/bg-footer-top-mobile.svg);
