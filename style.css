@@ -211,7 +211,7 @@ header {
   position: absolute;
   left: 0;
   right: 0;
-  top: calc((-10.9 / 100) * 100vw);
+  top: calc((-29.9 / 100) * 100vw);
   background-image: url(./images/bg-section-top-mobile-1.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -235,7 +235,7 @@ header {
   position: absolute;
   left: 0;
   right: 0;
-  top: calc((-10.9 / 100) * 100vw);
+  top: calc((-26.5 / 100) * 100vw);
   background-image: url(./images/bg-section-top-mobile-2.svg);
   background-size: contain;
   background-repeat: no-repeat;
