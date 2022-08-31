@@ -264,6 +264,8 @@ footer {
 
 .huddle-newsletter {
   text-align: left;
+  position: relative;
+  z-index: 111;
 }
 
 .huddle-newsletter .main-heading,
@@ -319,6 +321,8 @@ footer {
 .huddle-contact {
   text-align: left;
   margin-top: 5rem;
+  position: relative;
+  z-index: 111;
 }
 
 .huddle-contact .huddle-logo img {
@@ -341,9 +345,15 @@ footer {
 .huddle-phone .main-text,
 .huddle-email .main-text {
   margin-top: 0;
+}
+
+.huddle-phone .main-text a {
   color: #ffffff;
   text-decoration: none;
+  position: relative;
+  z-index: 111;
 }
+
 
 .huddle-contact .huddle-phone {
   margin-top: 2rem;
